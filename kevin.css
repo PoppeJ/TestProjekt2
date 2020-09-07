@@ -1,0 +1,153 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+article {
+	width: 100%;
+	max-width: 44rem;
+	padding: 2rem;
+	color: #0F0F0F;
+	font-family: 'Inter', sans-serif;
+}
+
+img {
+	width: 100%;
+	max-width: 44rem;
+}
+
+p {
+	font-size: 0.925rem;
+	line-height: 1.3875;
+	margin-top: 0;
+}
+
+a {
+	color: #3A6BAA;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+span {
+	color: #0F0F0F50;
+	font-size: 1.618rem;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 2.25rem;
+	line-height: 1.25;
+	margin-top: 2.25rem;
+	margin-bottom: 1.85rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+	line-height: 1.25;
+	font-weight: 500;
+	margin-top: 1.75rem;
+	margin-bottom: 0.925rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: 1.25;
+	margin-top: 1.325rem;
+	margin-bottom: 0.925rem;
+}
+
+h4 {
+	font-size: 0.925rem;
+	line-height: 1.25;
+	margin-top: 0.925rem;
+	margin-bottom: 0.4625rem;
+}
+
+h5 {
+	font-size: 0.625rem;
+	line-height: 1.25;
+	text-transform: uppercase;
+	opacity: 50%;
+	margin-top: 0.925rem;
+	margin-bottom: 0.173rem;
+}
+
+hr {
+	border: solid 0.058rem #0F0F0F;
+	margin-top: 0.173rem;
+	margin-bottom: 0.173rem;
+}
+
+ol {
+	font-size: 0.925rem;
+	line-height: 1.85;
+	padding-left: 0.4625rem;
+	margin: 0.925rem 0rem;
+	list-style-type: none;
+	counter-reset: item;
+}
+
+ol li::before {
+	content: counters(item, ".") " ";
+	counter-increment: item;
+	color: #3A6BAA;
+}
+
+ol ol {
+	padding-left: 0.925rem;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+ol ol li a, ol ol li::before {
+	color: #3A6BAAAA;
+}
+
+ol ol li a:hover {
+	color: #3A6BAA;
+}
+
+blockquote {
+	font-size: 0.925rem;
+	line-height: 1.619;
+	padding: 0.925rem;
+	margin: 0.925rem 0rem;
+	background: #F8F8F8;
+	border-left: solid 0.346875rem #A8A8A8;
+}
+
+.buttons {
+	display: flex;
+}
+
+button {
+	background: none;
+	padding: 0.751rem 0.925rem;
+	margin-top: 2rem;
+	margin-right: 2rem;
+	border: solid 0.173rem #0F0F0F;
+	color: #0F0F0F;
+	font-family: 'Inter', sans-serif;
+	font-size: 0.751rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition-property: background, color;
+	transition-duration: 0.173s;
+	transition-timing-function: ease-out;
+}
+
+button:hover {
+	background-color: #0F0F0F;
+	color: #FFFFFF;
+}

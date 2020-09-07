@@ -1,0 +1,138 @@
+body {
+    background-image: url(https://images2.alphacoders.com/589/thumb-1920-589399.jpg);
+}
+
+
+h1 {
+    color: black;
+    font-size: 40px;
+    padding: 0px;
+    margin-top: 0px;;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+/*NAVBAR*/
+/*div For Navbar*/
+#nav {
+    overflow: hidden;
+    width: 800px;
+    height: 60px;;
+    background-color: rgba(255, 255, 255, 0.42);
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.23);
+    padding: 60px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+/*Button*/
+#nav a {
+    float: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    padding: 25px
+}
+/*Link Underline*/
+a:link {
+    text-decoration: none;
+}
+/*Button Hover Change Color*/
+#nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/*END OF NAVBAR*/
+
+
+/*INFO BAR*/
+/*div For Info*/
+#info {
+    background-color: rgba(255, 255, 255, 0.78);
+    width: 900px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-color: #e6e6e6;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.23);
+}
+/*images For Info*/
+#info img {
+   border-style: solid;
+   border-radius: 100px;
+   border-color: rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 5px rgba(0, 0, 0, 0.23);
+   width: 200px;
+   height: 200px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+/*Image Hover Scale*/
+img:hover {
+    transform: scale(1.05);
+}
+/*Text alignment Info/Ut*/
+span {
+    vertical-align: top;
+    padding: 35px;;
+    font-size:20px;
+    display: flex;
+    align-items: right;
+}
+/*END OF INFO BAR*/
+
+
+/*UT BAR*/
+/*Div For Ut*/
+#ut {
+    background-color: rgba(255, 255, 255, 0.78);
+    width: 900px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-color: #e6e6e6;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.23);
+}
+/*Images For Ut*/
+#ut img {
+    border-style: solid;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.23);
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*END OF UT BAR*/
+
+
+/*BOT*/
+/*Div For Bot*/
+#bot {
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-color: #e6e6e6;
+    background-color: rgba(255, 255, 255, 0.78);
+    height: 120px;
+    margin-top: 60px;
+}
+/*Text Alignment For Bot*/
+#bot h2 {
+    padding: 10px;
+}
+/*END OF BOT*/

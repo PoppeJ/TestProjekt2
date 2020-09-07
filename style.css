@@ -1,0 +1,50 @@
+.myMenu2{
+    position: sticky;
+    top: 0;
+    background-color: rgba(100, 170, 241, 0.68);
+    border: 2px solid rgba(100, 170, 241, 0.68);
+    padding: 15px;
+    border-radius: 10px;
+}
+a {
+    color: white;
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+
+
+body{
+    background-image: url(https://external-preview.redd.it/GuN0PbJNN1dhqHETI_ZvZNrX5bjgj5mdNp8wfWbe_rg.jpg?auto=webp&s=52d9cef21fd106bb9fcd3ba1c7cdb4f58540d466);
+}
+form{
+
+}
+
+p {
+    font-size: 100px;
+    border-style: solid;
+    width: 600px;
+    background: red;
+    transition: width 10s;
+    background-image: url(https://ssl-static.libsyn.com/p/assets/b/9/8/4/b98438046f535bb4/clouds.jpg);
+    border-radius: 20px;
+}
+
+/*p:hover {
+    width: 0px;
+}*/

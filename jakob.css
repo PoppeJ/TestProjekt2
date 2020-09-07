@@ -1,0 +1,69 @@
+body{
+    background-color: navy;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+   
+    }
+
+a {
+    color: white;
+}
+
+.myMenu {
+
+    position: sticky;
+    top: 0;
+    background-color:blue;
+    border: 2px solid #4c56af;
+    border-radius: 3px;
+    
+  }
+
+
+
+
+  #myKnapp {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myKnapp:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }

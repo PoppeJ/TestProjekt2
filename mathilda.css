@@ -1,0 +1,175 @@
+/*
+http://127.0.0.1:5501/mathilda.html
+
+YT-video: https://www.youtube.com/watch?v=5bMdjkfvONE
+
+** VAD JAG HAR LÄRT MIG:**
+¤ Hur jag skapar kontakt mellan HTML och CSS när det kommer till klasser.
+¤ Hur jag strukturerar upp div/klasser i "hierarkisk struktur". Parent/Child/Grandchild
+¤ Hur jag strukturerar upp CSS-kod på bästa sätt med tillhörande styles efter varandra.(Nav styles/Portfolio styles)
+¤ Traverse Tree, hur du startar med en class för att sedan gå igenom det urval tills jag når det element jag önskar.
+  "Stylas i hierarkisk ordning".
+¤ Flexbox vad det är och hur man kan använda det i sin CSS.
+¤ Javascript koden ska alltid vara längst ner på index.html filen.
+För att JS jobbar med selectors på liknande sätt som CSS gör, 
+man vill inte att JS-koden ska köras innan hela sidan har laddat.
+¤ Gjorde min första arrow funktion, en javaskricpt funktion
+som gör bilden mörk när man hovrar över den.
+¤ När man skriver JS-kod så heter det inte hover utan mouseover.
+
+
+
+
+
+*/
+
+
+
+
+body{
+    font-family: Orbitron;
+    font-weight: 100;
+    margin: 0px;
+}
+header{
+    font-family: Orbitron;
+    display: block;
+}
+h1{
+text-align: center;
+font-family: Orbitron;
+color: black;
+}
+h2{
+    text-align: center;
+    font-family: Orbitron;
+    color:black;
+}
+h3{
+    text-align: center;
+    font-family: Orbitron;
+}
+p{
+    text-align: center;
+    font-family: Orbitron;
+    color: black;
+}
+.footer-img{
+    text-align: center;
+}
+.right-side{
+    display: grid;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.left-side{
+    display: flex;
+}
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+.subtitle-title{
+    font-size: 200%;
+}
+
+/*NAV STYLES*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+/*Traverese a tree in CSS:
+Det > gör är att den börjar först styla nav-wrapper klassen 
+och sedan går till left-side klassen och stylar den, och sedan går till
+divvarna inuti och stylar dom. Allt stylas i hiarktiska steg.*/
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9;
+    text-transform: uppercase; /*Gör så att texten blir i STORA bokstäver.*/
+    
+}
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+/*Genom att skriva :hover så berättar vi för CSS att vi vill använda "pseudo States".*/
+.nav-link.wrapper:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+/*Portfolio Styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Gjorde så dom delades upp i två columner.*/
+}
+.portfolio-item-wrapper{
+    position: relative; 
+}
+.portfolio-img-background{
+    background-size: cover; /*Bilder som inte har samma storlek croppas till samma med hjälp av cover.*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width:  100%;
+}
+.profile-image-wrapper img {
+    width: 100%;
+}
+  
+.profile-content-wrapper {
+    padding: 30px;
+}
+  
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}
+
+  /*Img Styles*/
+.img-text-wrapper{
+    position: absolute;
+    top: 0; /*Här fixar jag så att texten inuti bilden är högt uppe*/
+    display: flex; /*Alla element inuti ska använda flexbox*/
+    flex-direction: column;
+    justify-content: center;/*Texten hamnar i mitten av bilden*/
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color:transparent; /*Så att texten är transparant innan man hovrar*/
+}
+  
+
+  
+.img-text-wrapper:hover .subtitle {
+    color: white;
+    font-weight: 6000;
+} 
+  /*Detta kommer vara en del av en Javascript funktion,
+  det funktionen kommer göra är att hämta den här animationen så fort 
+  en användare hovrar över den bilden.*/ 
+.img-darken{
+      transition: 1s; /*transition är någon form av animation*/
+      filter: brightness(10%);  
+}
+.image-blur {
+        transition: 1s;
+        filter: brightness(100%);
+}
+
+  
